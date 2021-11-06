@@ -23,7 +23,8 @@ Things you may want to cover:
 
 * ...
 
-#___________________________________________
+_______________________________________________________________________________
+
 Extend your campus application to include classes and sections. A class has the following attributes.
 
     Prefix (e.g.: CS, MTH, …)

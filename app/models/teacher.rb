@@ -1,3 +1,3 @@
 class Teacher < ApplicationRecord
-  belongs_to :office
+  belongs_to :office, optional: true
 end

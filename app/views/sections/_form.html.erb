@@ -13,15 +13,15 @@
 
   <div class="field">
     <%= form.label :year %>
-    <%= form.text_field :year %>
+    <%= form.text_field :year, class:"form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :Semester %>
-    <%= form.text_field :Semester %>
+    <%= form.text_field :Semester, class:"form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-secondary' %>
   </div>
 <% end %>
