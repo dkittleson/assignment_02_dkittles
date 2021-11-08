@@ -10,5 +10,10 @@
   <%= @section.Semester %>
 </p>
 
-<%= link_to 'Edit', edit_section_path(@section), class:"btn btn-secondary"  %> |
-<%= link_to 'Back', sections_path, class:"btn btn-secondary"  %>
+<p>
+  <strong>Course:</strong>
+  <%= @section.course_id %>
+</p>
+
+<%= link_to 'Edit', edit_section_path(@section) %> |
+<%= link_to 'Back', sections_path %>

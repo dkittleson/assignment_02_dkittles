@@ -17,7 +17,7 @@ class SectionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create section" do
     assert_difference('Section.count') do
-      post sections_url, params: { section: { Semester: @section.Semester, year: @section.year } }
+      post sections_url, params: { section: { Semester: @section.Semester, course_id: @section.course_id, year: @section.year } }
     end
 
     assert_redirected_to section_url(Section.last)
@@ -34,7 +34,7 @@ class SectionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update section" do
-    patch section_url(@section), params: { section: { Semester: @section.Semester, year: @section.year } }
+    patch section_url(@section), params: { section: { Semester: @section.Semester, course_id: @section.course_id, year: @section.year } }
     assert_redirected_to section_url(@section)
   end
 

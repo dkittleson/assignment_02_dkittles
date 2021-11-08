@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_06_221156) do
+ActiveRecord::Schema.define(version: 2021_11_08_035845) do
 
   create_table "courses", force: :cascade do |t|
     t.string "prefix"
@@ -31,8 +31,10 @@ ActiveRecord::Schema.define(version: 2021_11_06_221156) do
   create_table "sections", force: :cascade do |t|
     t.string "year"
     t.string "Semester"
+    t.integer "course_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_id"], name: "index_sections_on_course_id"
   end
 
   create_table "teachers", force: :cascade do |t|
@@ -46,5 +48,6 @@ ActiveRecord::Schema.define(version: 2021_11_06_221156) do
     t.index ["office_id"], name: "index_teachers_on_office_id"
   end
 
+  add_foreign_key "sections", "courses"
   add_foreign_key "teachers", "offices"
 end

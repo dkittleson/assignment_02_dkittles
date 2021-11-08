@@ -3,7 +3,9 @@
 one:
   year: MyString
   Semester: MyString
+  course: one
 
 two:
   year: MyString
   Semester: MyString
+  course: two

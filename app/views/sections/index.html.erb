@@ -2,11 +2,12 @@
 
 <h1>Sections</h1>
 
-<table class="table table-striped table-hover">
-  <thead class="table-dark">
+<table>
+  <thead>
     <tr>
       <th>Year</th>
       <th>Semester</th>
+      <th>Course</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +17,10 @@
       <tr>
         <td><%= section.year %></td>
         <td><%= section.Semester %></td>
-        <td><%= link_to 'Show', section, class:"btn btn-secondary"  %></td>
-        <td><%= link_to 'Edit', edit_section_path(section), class:"btn btn-secondary"  %></td>
-        <td><%= link_to 'Destroy', section, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-secondary"  %></td>
+        <td><%= section.course_id %></td>
+        <td><%= link_to 'Show', section %></td>
+        <td><%= link_to 'Edit', edit_section_path(section) %></td>
+        <td><%= link_to 'Destroy', section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Section', new_section_path, class:"btn btn-secondary"  %>
+<%= link_to 'New Section', new_section_path %>
