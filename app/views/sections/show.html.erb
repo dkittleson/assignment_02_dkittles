@@ -7,7 +7,7 @@
 
 <p>
   <strong>Semester:</strong>
-  <%= @section.Semester %>
+  <%= @section.semester %>
 </p>
 
 <p>
@@ -15,5 +15,6 @@
   <%= @section.course_id %>
 </p>
 
-<%= link_to 'Edit', edit_section_path(@section) %> |
-<%= link_to 'Back', sections_path %>
+<%= link_to 'Edit', edit_section_path(@section), class:"btn btn-secondary" %>
+<br><br>
+<%= link_to 'Back', sections_path, class:"btn btn-secondary" %>

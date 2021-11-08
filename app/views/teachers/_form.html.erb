@@ -34,7 +34,7 @@
   <div class="field form-group">
     <%= form.label :office_id %>
     <br>
-    <%= form.collection_select :office_id, Office.all, :id, (:building_floor_room) %>
+    <%= form.collection_select :office_id, Office.all, :id, (:building_floor_room), class:"form-control" %>
   </div>
 
   <br>

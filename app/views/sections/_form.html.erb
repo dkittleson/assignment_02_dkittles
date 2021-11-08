@@ -11,21 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :year %>
     <%= form.text_field :year, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :Semester %>
-    <%= form.text_field :Semester, class:"form-control" %>
+  <div class="field form-group">
+    <%= form.label :semester %>
+    <%= form.text_field :semester, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :course_id %>
-    <%= form.text_field :course_id, class:"form-control" %>
+    <%= form.collection_select :course_id, Course.all, :id, :prefix_num, class:"form-control" %>
   </div>
-
+<br>
   <div class="actions">
     <%= form.submit class: 'btn btn-secondary' %>
   </div>

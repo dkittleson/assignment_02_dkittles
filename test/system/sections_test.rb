@@ -14,8 +14,8 @@ class SectionsTest < ApplicationSystemTestCase
     visit sections_url
     click_on "New Section"
 
-    fill_in "Semester", with: @section.Semester
     fill_in "Course", with: @section.course_id
+    fill_in "Semester", with: @section.semester
     fill_in "Year", with: @section.year
     click_on "Create Section"
 
@@ -27,8 +27,8 @@ class SectionsTest < ApplicationSystemTestCase
     visit sections_url
     click_on "Edit", match: :first
 
-    fill_in "Semester", with: @section.Semester
     fill_in "Course", with: @section.course_id
+    fill_in "Semester", with: @section.semester
     fill_in "Year", with: @section.year
     click_on "Update Section"
 

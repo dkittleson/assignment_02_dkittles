@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_08_035845) do
+ActiveRecord::Schema.define(version: 2021_11_08_084133) do
 
   create_table "courses", force: :cascade do |t|
     t.string "prefix"
@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(version: 2021_11_08_035845) do
 
   create_table "sections", force: :cascade do |t|
     t.string "year"
-    t.string "Semester"
-    t.integer "course_id", null: false
+    t.string "semester"
+    t.integer "course_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["course_id"], name: "index_sections_on_course_id"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2021_11_08_035845) do
     t.string "last_name"
     t.string "nine_hundred"
     t.string "email"
-    t.integer "office_id", null: false
+    t.integer "office_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["office_id"], name: "index_teachers_on_office_id"

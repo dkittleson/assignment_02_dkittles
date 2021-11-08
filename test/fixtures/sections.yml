@@ -2,10 +2,10 @@
 
 one:
   year: MyString
-  Semester: MyString
+  semester: MyString
   course: one
 
 two:
   year: MyString
-  Semester: MyString
+  semester: MyString
   course: two
