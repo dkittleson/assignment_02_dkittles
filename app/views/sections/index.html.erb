@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Sections</h1>
 
 <table class="table table-striped table-hover">
@@ -17,7 +15,7 @@
       <tr>
         <td><%= section.year %></td>
         <td><%= section.semester %></td>
-        <td><%= section.course_id %></td>
+        <td><%= section.course.prefix_num %></td>
         <td><%= link_to 'Show', section, class:"btn btn-secondary" %></td>
         <td><%= link_to 'Edit', edit_section_path(section), class:"btn btn-secondary" %></td>
         <td><%= link_to 'Destroy', section, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-secondary" %></td>

@@ -25,7 +25,7 @@ Things you may want to cover:
 
 _______________________________________________________________________________
 
-Extend your campus application to include ~~classes~~ courses and sections. A ~~class~~ course has the following attributes.
+Extend your campus application to include ~~classes~~ **course** and sections. A ~~class~~ course has the following attributes.
 
     Prefix (e.g.: CS, MTH, …)
     Number (e.g.: 3710, …)
@@ -36,8 +36,8 @@ A section has the following attributes.
     Year
     Semester (Spring, Summer, Fall)
 
-A ~~class~~ course has many sections and a section belongs to a ~~class~~ course. Create check boxes to select a section when creating/editing a ~~class~~ course, and a drop-down for ~~classes~~ courses when creating/editing a section.
+A ~~class~~ **course** has many sections and a section belongs to a ~~class~~ **course**. Create check boxes to select a section when creating/editing a ~~class~~ **course**, and a drop-down for ~~classes~~ **course** when creating/editing a section.
 
 Add global navigation to all index pages. This can be as simple as having a table with link_to's to the appropriate "Prefix"s from "rails routes".
 
-Make sure all the "Show"s also display the "other"; i.e.: a ~~class's~~ course's page should show all of its sections, and a section page should display the associated ~~class~~ course.
+Make sure all the "Show"s also display the "other"; i.e.: a ~~class's~~ **course's** page should show all of its sections, and a section page should display the associated ~~class~~ **course**.

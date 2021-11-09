@@ -6,7 +6,6 @@
   <thead class="table-dark">
   <tr>
     <th>Name </th>
-    <!--      <th>Last name </th>-->
     <th>900 Number </th>
     <th>Email Address </th>
     <th>Office </th>
@@ -18,10 +17,9 @@
   <% @teachers.each do |teacher| %>
     <tr>
       <td><%= teacher.first_name %> <%= teacher.last_name %></td>
-      <!--        <td><%#= teacher.last_name %></td>-->
       <td><%= teacher.nine_hundred %></td>
       <td><%= teacher.email %></td>
-      <td><%= teacher.office_id%></td>
+      <td><%= teacher.office.building_floor_room %></td>
       <td><%= link_to 'Show', teacher, class:"btn btn-secondary"  %></td>
       <td><%= link_to 'Edit', edit_teacher_path(teacher), class:"btn btn-secondary" %></td>
       <td><%= link_to 'Delete', teacher, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-secondary"  %></td>

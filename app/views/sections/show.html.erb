@@ -1,6 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<p>
+<h1 class="display-5 fw-bold">Section</h1>
+<p class="col-md-8 fs-4">
   <strong>Year:</strong>
   <%= @section.year %>
 </p>
@@ -12,7 +11,7 @@
 
 <p>
   <strong>Course:</strong>
-  <%= @section.course_id %>
+  <%= @section.course.prefix_num %>
 </p>
 
 <%= link_to 'Edit', edit_section_path(@section), class:"btn btn-secondary" %>
